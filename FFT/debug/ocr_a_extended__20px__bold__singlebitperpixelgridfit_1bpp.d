@@ -1,0 +1,8 @@
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: SRC\eGFX\Fonts\OCR_A_Extended__20px__Bold__SingleBitPerPixelGridFit_1BPP\OCR_A_Extended__20px__Bold__SingleBitPerPixelGridFit_1BPP.c
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: .\SRC\eGFX\eGFX.h
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: .\SRC\eGFX\eGFX_DataTypes.h
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: SRC\eGFX\Fonts\OCR_A_Extended__20px__Bold__SingleBitPerPixelGridFit_1BPP\OCR_A_Extended__20px__Bold__SingleBitPerPixelGridFit_1BPP.h
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: .\SRC\eGFX\eGFX.h
+debug\ocr_a_extended__20px__bold__singlebitperpixelgridfit_1bpp.o: .\SRC\eGFX\eGFX_DataTypes.h

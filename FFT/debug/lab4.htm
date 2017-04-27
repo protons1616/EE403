@@ -1,0 +1,2648 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [debug\lab4.out]</title></head>
+<body><HR>
+<H1>Static Call Graph for image debug\lab4.out</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Tue Apr 25 22:58:07 2017
+<BR><P>
+<H3>Maximum Stack Usage =        468 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; InitAudio_CODEC &rArr; WM8904_Init &rArr; WM8904_SetProtocol &rArr; WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+ <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
+ <LI><a href="#[4]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">BusFault_Handler</a><BR>
+ <LI><a href="#[5]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">UsageFault_Handler</a><BR>
+ <LI><a href="#[6]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">SVC_Handler</a><BR>
+ <LI><a href="#[7]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DebugMon_Handler</a><BR>
+ <LI><a href="#[8]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">PendSV_Handler</a><BR>
+ <LI><a href="#[9]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">SysTick_Handler</a><BR>
+ <LI><a href="#[5c]">ADC0_SEQA_DriverIRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5c]">ADC0_SEQA_DriverIRQHandler</a><BR>
+ <LI><a href="#[c7]">CLOCK_GetFlexCommClkFreq</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9c]">CLOCK_GetFreq</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[5c]">ADC0_SEQA_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[20]">ADC0_SEQA_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[5d]">ADC0_SEQB_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[21]">ADC0_SEQB_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[5e]">ADC0_THCMP_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[22]">ADC0_THCMP_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[4]">BusFault_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[71]">CAN0_IRQ0_DriverIRQHandler</a> from fsl_mcan.o(i.CAN0_IRQ0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[35]">CAN0_IRQ0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[72]">CAN0_IRQ1_DriverIRQHandler</a> from fsl_mcan.o(i.CAN0_IRQ1_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[36]">CAN0_IRQ1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[73]">CAN1_IRQ0_DriverIRQHandler</a> from fsl_mcan.o(i.CAN1_IRQ0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[37]">CAN1_IRQ0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[74]">CAN1_IRQ1_DriverIRQHandler</a> from fsl_mcan.o(i.CAN1_IRQ1_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[38]">CAN1_IRQ1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[50]">CTIMER0_DriverIRQHandler</a> from fsl_ctimer.o(i.CTIMER0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[14]">CTIMER0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[51]">CTIMER1_DriverIRQHandler</a> from fsl_ctimer.o(i.CTIMER1_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[15]">CTIMER1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[6a]">CTIMER2_DriverIRQHandler</a> from fsl_ctimer.o(i.CTIMER2_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[2e]">CTIMER2_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[53]">CTIMER3_DriverIRQHandler</a> from fsl_ctimer.o(i.CTIMER3_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[17]">CTIMER3_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[6b]">CTIMER4_DriverIRQHandler</a> from fsl_ctimer.o(i.CTIMER4_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[2f]">CTIMER4_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[47]">DMA0_DriverIRQHandler</a> from fsl_dma.o(i.DMA0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[b]">DMA0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[5f]">DMIC0_DriverIRQHandler</a> from fsl_dmic.o(i.DMIC0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[23]">DMIC0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[7f]">DMIC_TransferReceiveDMACallback</a> from fsl_dmic_dma.o(i.DMIC_TransferReceiveDMACallback) referenced from fsl_dmic_dma.o(i.DMIC_TransferCreateHandleDMA)
+ <LI><a href="#[84]">DMIC_UserCallback</a> from dma.o(i.DMIC_UserCallback) referenced from dma.o(i.Init_DMA)
+ <LI><a href="#[82]">DbgConsole_Putchar</a> from fsl_debug_console.o(i.DbgConsole_Putchar) referenced from fsl_debug_console.o(i.DbgConsole_Printf)
+ <LI><a href="#[7]">DebugMon_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[7a]">EEPROM_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[3e]">EEPROM_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[77]">ETHERNET_DriverIRQHandler</a> from fsl_enet.o(i.ETHERNET_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[3b]">ETHERNET_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[79]">ETHERNET_MACLP_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[3d]">ETHERNET_MACLP_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[78]">ETHERNET_PMT_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[3c]">ETHERNET_PMT_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[54]">FLEXCOMM0_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[18]">FLEXCOMM0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[55]">FLEXCOMM1_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM1_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[19]">FLEXCOMM1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[56]">FLEXCOMM2_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM2_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[1a]">FLEXCOMM2_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[57]">FLEXCOMM3_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM3_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[1b]">FLEXCOMM3_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[58]">FLEXCOMM4_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM4_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[1c]">FLEXCOMM4_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[59]">FLEXCOMM5_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM5_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[1d]">FLEXCOMM5_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[5a]">FLEXCOMM6_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[1e]">FLEXCOMM6_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[5b]">FLEXCOMM7_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[1f]">FLEXCOMM7_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[6e]">FLEXCOMM8_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM8_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[32]">FLEXCOMM8_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[6f]">FLEXCOMM9_DriverIRQHandler</a> from fsl_flexcomm.o(i.FLEXCOMM9_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[33]">FLEXCOMM9_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[48]">GINT0_DriverIRQHandler</a> from fsl_gint.o(i.GINT0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[c]">GINT0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[49]">GINT1_DriverIRQHandler</a> from fsl_gint.o(i.GINT1_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[d]">GINT1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[60]">HWVAD0_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[24]">HWVAD0_IRQHandler</a> from fsl_dmic.o(i.HWVAD0_IRQHandler) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[83]">I2S_DMACallback</a> from fsl_i2s_dma.o(i.I2S_DMACallback) referenced from fsl_i2s_dma.o(i.I2S_TxTransferCreateHandleDMA)
+ <LI><a href="#[7b]">LCD_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[3f]">LCD_IRQHandler</a> from egfx_driver_lpcxpresso_54608.o(i.LCD_IRQHandler) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[4f]">MRT0_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[13]">MRT0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[4a]">PIN_INT0_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[e]">PIN_INT0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[4b]">PIN_INT1_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT1_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[f]">PIN_INT1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[4c]">PIN_INT2_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT2_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[10]">PIN_INT2_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[4d]">PIN_INT3_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT3_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[11]">PIN_INT3_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[66]">PIN_INT4_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT4_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[2a]">PIN_INT4_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[67]">PIN_INT5_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT5_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[2b]">PIN_INT5_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[68]">PIN_INT6_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT6_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[2c]">PIN_INT6_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[69]">PIN_INT7_DriverIRQHandler</a> from fsl_pint.o(i.PIN_INT7_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[2d]">PIN_INT7_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[6c]">RIT_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[30]">RIT_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[63]">RTC_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[27]">RTC_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[64]">Reserved46_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[28]">Reserved46_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[65]">Reserved47_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[29]">Reserved47_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[52]">SCT0_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[16]">SCT0_IRQHandler</a> from fsl_sctimer.o(i.SCT0_IRQHandler) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[86]">SCTIMER_EventHandleIRQ</a> from fsl_sctimer.o(i.SCTIMER_EventHandleIRQ) referenced from fsl_sctimer.o(i.SCTIMER_Init)
+ <LI><a href="#[70]">SDIO_DriverIRQHandler</a> from fsl_sdif.o(i.SDIO_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[34]">SDIO_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[7c]">SHA_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[40]">SHA_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[7d]">SMARTCARD0_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[41]">SMARTCARD0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[7e]">SMARTCARD1_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[42]">SMARTCARD1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[6d]">SPIFI0_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[31]">SPIFI0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[9]">SysTick_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[44]">SystemInit</a> from system_lpc54608.o(i.SystemInit) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[81]">USART_ReadBlocking</a> from fsl_usart.o(i.USART_ReadBlocking) referenced from fsl_debug_console.o(i.DbgConsole_Init)
+ <LI><a href="#[80]">USART_WriteBlocking</a> from fsl_usart.o(i.USART_WriteBlocking) referenced from fsl_debug_console.o(i.DbgConsole_Init)
+ <LI><a href="#[62]">USB0_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[26]">USB0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[61]">USB0_NEEDCLK_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[25]">USB0_NEEDCLK_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[75]">USB1_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[39]">USB1_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[76]">USB1_NEEDCLK_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[3a]">USB1_NEEDCLK_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[4e]">UTICK0_DriverIRQHandler</a> from fsl_utick.o(i.UTICK0_DriverIRQHandler) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[12]">UTICK0_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[46]">WDT_BOD_DriverIRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[a]">WDT_BOD_IRQHandler</a> from startup_lpc54608.o(.text) referenced from startup_lpc54608.o(RESET)
+ <LI><a href="#[45]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_lpc54608.o(.text)
+ <LI><a href="#[87]">_snputc</a> from printfa.o(i._snputc) referenced from printfa.o(i.__0vsnprintf)
+ <LI><a href="#[85]">codecTxCallback</a> from dma.o(i.codecTxCallback) referenced from dma.o(i.Init_DMA)
+ <LI><a href="#[43]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[45]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[15b]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry4.o(.ARM.Collect$$$$00000003))
+
+<P><STRONG><a name="[88]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[99]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[15c]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[15d]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[15e]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[15f]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[160]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>WDT_BOD_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>DMA0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>GINT0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>GINT1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>PIN_INT0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>PIN_INT1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>PIN_INT2_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>PIN_INT3_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>UTICK0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>MRT0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>CTIMER0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>CTIMER1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>CTIMER3_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>FLEXCOMM0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>FLEXCOMM1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>FLEXCOMM2_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>FLEXCOMM3_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>FLEXCOMM4_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>FLEXCOMM5_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>FLEXCOMM6_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>FLEXCOMM7_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>ADC0_SEQA_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>ADC0_SEQB_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>ADC0_THCMP_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>DMIC0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>USB0_NEEDCLK_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>USB0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>RTC_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>Reserved46_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>Reserved47_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>PIN_INT4_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>PIN_INT5_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>PIN_INT6_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>PIN_INT7_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>CTIMER2_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>CTIMER4_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>RIT_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>SPIFI0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>FLEXCOMM8_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>FLEXCOMM9_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>SDIO_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>CAN0_IRQ0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>CAN0_IRQ1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>CAN1_IRQ0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>CAN1_IRQ1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>USB1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>USB1_NEEDCLK_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>ETHERNET_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>ETHERNET_PMT_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>ETHERNET_MACLP_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>EEPROM_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[40]"></a>SHA_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[41]"></a>SMARTCARD0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>SMARTCARD1_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[5c]"></a>ADC0_SEQA_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_SEQA_DriverIRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_SEQA_DriverIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[5d]"></a>ADC0_SEQB_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[5e]"></a>ADC0_THCMP_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[7a]"></a>EEPROM_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[79]"></a>ETHERNET_MACLP_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[78]"></a>ETHERNET_PMT_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[5a]"></a>FLEXCOMM6_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[5b]"></a>FLEXCOMM7_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[60]"></a>HWVAD0_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[7b]"></a>LCD_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[4f]"></a>MRT0_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[6c]"></a>RIT_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[63]"></a>RTC_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[64]"></a>Reserved46_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[65]"></a>Reserved47_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[52]"></a>SCT0_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[7c]"></a>SHA_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[7d]"></a>SMARTCARD0_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[7e]"></a>SMARTCARD1_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[6d]"></a>SPIFI0_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[62]"></a>USB0_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[61]"></a>USB0_NEEDCLK_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[75]"></a>USB1_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[76]"></a>USB1_NEEDCLK_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[46]"></a>WDT_BOD_DriverIRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc54608.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[8a]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetup
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetup
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[161]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[a2]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_BootClock_PLL_RUN
+</UL>
+
+<P><STRONG><a name="[162]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[8e]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[163]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[164]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[8d]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[eb]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferCreateHandleDMA
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_PrepareTransfer
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferCreateHandleDMA
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TransferAbortDMA
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_fir_decimate_init_f32
+</UL>
+
+<P><STRONG><a name="[165]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[8f]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[fa]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_PrintfFormattedData
+</UL>
+
+<P><STRONG><a name="[142]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[166]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[145]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[8c]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[167]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[8b]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[168]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[169]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 48 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[90]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[94]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[95]"></a>__aeabi_drsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[96]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 48 bytes, dmul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[97]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[98]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[89]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[16a]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[91]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[16b]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+
+<P><STRONG><a name="[93]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[92]"></a>_double_epilogue</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[16c]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dclz77c.o(.text), UNUSED)
+
+<P><STRONG><a name="[16d]"></a>__decompress2</STRONG> (Thumb, 94 bytes, Stack size unknown bytes, __dclz77c.o(.text), UNUSED)
+
+<P><STRONG><a name="[9a]"></a>APP_LCDC_Init</STRONG> (Thumb, 182 bytes, Stack size 48 bytes, egfx_driver_lpcxpresso_54608.o(i.APP_LCDC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 300<LI>Call Chain = APP_LCDC_Init &rArr; LCDC_Init &rArr; RESET_PeripheralReset &rArr; RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_Init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_GetDefaultConfig
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_EnableInterrupts
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_InitDriver
+</UL>
+
+<P><STRONG><a name="[9f]"></a>BOARD_BootClock_PLL_RUN</STRONG> (Thumb, 80 bytes, Stack size 56 bytes, main.o(i.BOARD_BootClock_PLL_RUN))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = BOARD_BootClock_PLL_RUN &rArr; CLOCK_SetupPLLData &rArr; CLOCK_GetPllConfig &rArr; pllFindSel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_SetVoltageForFreq
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupPLLData
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetFLASHAccessCyclesForFreq
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_AttachClk
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a6]"></a>BOARD_InitDebugConsole</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, board.o(i.BOARD_InitDebugConsole))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = BOARD_InitDebugConsole &rArr; DbgConsole_Init &rArr; USART_Init &rArr; USART_SetBaudRate &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[af]"></a>BOARD_InitPins</STRONG> (Thumb, 1584 bytes, Stack size 8 bytes, pin_mux.o(i.BOARD_InitPins))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = BOARD_InitPins &rArr; IOCON_PinMuxSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IOCON_PinMuxSet
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_EnableClock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b2]"></a>BOARD_InitSDRAM</STRONG> (Thumb, 148 bytes, Stack size 72 bytes, board.o(i.BOARD_InitSDRAM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = BOARD_InitSDRAM &rArr; EMC_DynamicMemInit &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_Init
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_DynamicMemInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[71]"></a>CAN0_IRQ0_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_mcan.o(i.CAN0_IRQ0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = CAN0_IRQ0_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[72]"></a>CAN0_IRQ1_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_mcan.o(i.CAN0_IRQ1_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = CAN0_IRQ1_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[73]"></a>CAN1_IRQ0_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_mcan.o(i.CAN1_IRQ0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = CAN1_IRQ0_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[74]"></a>CAN1_IRQ1_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_mcan.o(i.CAN1_IRQ1_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = CAN1_IRQ1_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[a5]"></a>CLOCK_AttachClk</STRONG> (Thumb, 66 bytes, Stack size 20 bytes, fsl_clock.o(i.CLOCK_AttachClk))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = CLOCK_AttachClk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_InitDriver
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_BootClock_PLL_RUN
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPWM
+</UL>
+
+<P><STRONG><a name="[b5]"></a>CLOCK_GetAdcClkFreq</STRONG> (Thumb, 72 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetAdcClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = CLOCK_GetAdcClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsbPllOutFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPllOutFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[ba]"></a>CLOCK_GetAsyncApbClkFreq</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_clock.o(i.CLOCK_GetAsyncApbClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CLOCK_GetAsyncApbClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[bc]"></a>CLOCK_GetAudioPLLInClockRate</STRONG> (Thumb, 42 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetAudioPLLInClockRate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = CLOCK_GetAudioPLLInClockRate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetExtClkFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLData
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetup
+</UL>
+
+<P><STRONG><a name="[be]"></a>CLOCK_GetAudioPLLOutFromSetup</STRONG> (Thumb, 90 bytes, Stack size 32 bytes, fsl_clock.o(i.CLOCK_GetAudioPLLOutFromSetup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = CLOCK_GetAudioPLLOutFromSetup &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllPreDiv
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllPostDiv
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllMMult
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLInClockRate
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetupUpdate
+</UL>
+
+<P><STRONG><a name="[b9]"></a>CLOCK_GetAudioPllOutFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetAudioPllOutFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSpifiClkFreq
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSdioClkFreq
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSctClkFreq
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetMclkClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAdcClkFreq
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[c3]"></a>CLOCK_GetClockOutClkFreq</STRONG> (Thumb, 116 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetClockOutClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_GetClockOutClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetWdtOscFreq
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsbPllOutFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetOsc32KFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetExtClkFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPllOutFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[bb]"></a>CLOCK_GetCoreSysClkFreq</STRONG> (Thumb, 120 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetCoreSysClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetWdtOscFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetOsc32KFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFro12MFreq
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetExtClkFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSpifiClkFreq
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSdioClkFreq
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSctClkFreq
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetLcdClkFreq
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAsyncApbClkFreq
+</UL>
+
+<P><STRONG><a name="[bd]"></a>CLOCK_GetExtClkFreq</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetExtClkFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLInClockRate
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLInClockRate
+</UL>
+
+<P><STRONG><a name="[c7]"></a>CLOCK_GetFlexCommClkFreq</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, fsl_clock.o(i.CLOCK_GetFlexCommClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + In Cycle
+<LI>Call Chain = CLOCK_GetFlexCommClkFreq &rArr;  CLOCK_GetFreq (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetI2SMClkFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFro12MFreq
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[9c]"></a>CLOCK_GetFreq</STRONG> (Thumb, 708 bytes, Stack size 16 bytes, fsl_clock.o(i.CLOCK_GetFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = CLOCK_GetFreq &rArr; CLOCK_GetAsyncApbClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetWdtOscFreq
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb1ClkFreq
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb0ClkFreq
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSpifiClkFreq
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSdioClkFreq
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSctClkFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetMclkClkFreq
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetLcdClkFreq
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetI2SMClkFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFro12MFreq
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFlexCommClkFreq
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetExtClkFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAsyncApbClkFreq
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAdcClkFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_CalculateTimerCycles
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFlexCommClkFreq
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitSDRAM
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitDebugConsole
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_LCDC_Init
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPWM
+</UL>
+
+<P><STRONG><a name="[c6]"></a>CLOCK_GetFro12MFreq</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetFro12MFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFlexCommClkFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+</UL>
+
+<P><STRONG><a name="[b6]"></a>CLOCK_GetFroHfFreq</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetFroHfFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb1ClkFreq
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb0ClkFreq
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSpifiClkFreq
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSdioClkFreq
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSctClkFreq
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetMclkClkFreq
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetLcdClkFreq
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFlexCommClkFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAdcClkFreq
+</UL>
+
+<P><STRONG><a name="[c8]"></a>CLOCK_GetI2SMClkFreq</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetI2SMClkFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFlexCommClkFreq
+</UL>
+
+<P><STRONG><a name="[cf]"></a>CLOCK_GetLcdClkFreq</STRONG> (Thumb, 58 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetLcdClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_GetLcdClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetLcdClkIn
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[d0]"></a>CLOCK_GetLcdClkIn</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetLcdClkIn))
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetLcdClkFreq
+</UL>
+
+<P><STRONG><a name="[cc]"></a>CLOCK_GetMclkClkFreq</STRONG> (Thumb, 58 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetMclkClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = CLOCK_GetMclkClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPllOutFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[c5]"></a>CLOCK_GetOsc32KFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetOsc32KFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLInClockRate
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+</UL>
+
+<P><STRONG><a name="[b7]"></a>CLOCK_GetPllOutFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetPllOutFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb1ClkFreq
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb0ClkFreq
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSpifiClkFreq
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSdioClkFreq
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSctClkFreq
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFlexCommClkFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAdcClkFreq
+</UL>
+
+<P><STRONG><a name="[cd]"></a>CLOCK_GetSctClkFreq</STRONG> (Thumb, 72 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetSctClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_GetSctClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPllOutFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[ce]"></a>CLOCK_GetSdioClkFreq</STRONG> (Thumb, 86 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetSdioClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_GetSdioClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsbPllOutFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPllOutFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[c9]"></a>CLOCK_GetSpifiClkFreq</STRONG> (Thumb, 86 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetSpifiClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_GetSpifiClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsbPllOutFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPllOutFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[d7]"></a>CLOCK_GetSystemPLLInClockRate</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, fsl_clock.o(i.CLOCK_GetSystemPLLInClockRate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_GetSystemPLLInClockRate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetWdtOscFreq
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetOsc32KFreq
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetExtClkFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupPLLData
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetup
+</UL>
+
+<P><STRONG><a name="[d8]"></a>CLOCK_GetSystemPLLOutFromSetup</STRONG> (Thumb, 90 bytes, Stack size 32 bytes, fsl_clock.o(i.CLOCK_GetSystemPLLOutFromSetup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = CLOCK_GetSystemPLLOutFromSetup &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllPreDiv
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllPostDiv
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllMMult
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLInClockRate
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetupUpdate
+</UL>
+
+<P><STRONG><a name="[ca]"></a>CLOCK_GetUsb0ClkFreq</STRONG> (Thumb, 58 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetUsb0ClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = CLOCK_GetUsb0ClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsbPllOutFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[cb]"></a>CLOCK_GetUsb1ClkFreq</STRONG> (Thumb, 58 bytes, Stack size 4 bytes, fsl_clock.o(i.CLOCK_GetUsb1ClkFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = CLOCK_GetUsb1ClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsbPllOutFreq
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllOutFreq
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFroHfFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+
+<P><STRONG><a name="[b8]"></a>CLOCK_GetUsbPllOutFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetUsbPllOutFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb1ClkFreq
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetUsb0ClkFreq
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSpifiClkFreq
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSdioClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAdcClkFreq
+</UL>
+
+<P><STRONG><a name="[c4]"></a>CLOCK_GetWdtOscFreq</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_GetWdtOscFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLInClockRate
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetCoreSysClkFreq
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetClockOutClkFreq
+</UL>
+
+<P><STRONG><a name="[ab]"></a>CLOCK_SetClkDiv</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_clock.o(i.CLOCK_SetClkDiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_SetClkDiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_InitDriver
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPWM
+</UL>
+
+<P><STRONG><a name="[a1]"></a>CLOCK_SetFLASHAccessCyclesForFreq</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, fsl_clock.o(i.CLOCK_SetFLASHAccessCyclesForFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLOCK_SetFLASHAccessCyclesForFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetFLASHAccessCycles
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_BootClock_PLL_RUN
+</UL>
+
+<P><STRONG><a name="[db]"></a>CLOCK_SetupAudioPLLData</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, fsl_clock.o(i.CLOCK_SetupAudioPLLData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = CLOCK_SetupAudioPLLData &rArr; CLOCK_GetPllConfig &rArr; pllFindSel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllConfig
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLInClockRate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[dc]"></a>CLOCK_SetupAudioPLLPrec</STRONG> (Thumb, 212 bytes, Stack size 24 bytes, fsl_clock.o(i.CLOCK_SetupAudioPLLPrec))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = CLOCK_SetupAudioPLLPrec &rArr; CLOCK_GetAudioPLLOutFromSetupUpdate &rArr; CLOCK_GetAudioPLLOutFromSetup &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_EnablePD
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_DisablePD
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetupUpdate
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_Enable_SysOsc
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_SetPLL
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[a3]"></a>CLOCK_SetupPLLData</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, fsl_clock.o(i.CLOCK_SetupPLLData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = CLOCK_SetupPLLData &rArr; CLOCK_GetPllConfig &rArr; pllFindSel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllConfig
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLInClockRate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_BootClock_PLL_RUN
+</UL>
+
+<P><STRONG><a name="[a4]"></a>CLOCK_SetupSystemPLLPrec</STRONG> (Thumb, 220 bytes, Stack size 24 bytes, fsl_clock.o(i.CLOCK_SetupSystemPLLPrec))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = CLOCK_SetupSystemPLLPrec &rArr; CLOCK_GetSystemPLLOutFromSetupUpdate &rArr; CLOCK_GetSystemPLLOutFromSetup &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_EnablePD
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_DisablePD
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetupUpdate
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_Enable_SysOsc
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_SetVoltageForFreq
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_SetPLL
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetFLASHAccessCyclesForFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_BootClock_PLL_RUN
+</UL>
+
+<P><STRONG><a name="[50]"></a>CTIMER0_DriverIRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, fsl_ctimer.o(i.CTIMER0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CTIMER0_DriverIRQHandler &rArr; CTIMER_GenericIRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER_GenericIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[51]"></a>CTIMER1_DriverIRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, fsl_ctimer.o(i.CTIMER1_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CTIMER1_DriverIRQHandler &rArr; CTIMER_GenericIRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER_GenericIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[6a]"></a>CTIMER2_DriverIRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, fsl_ctimer.o(i.CTIMER2_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CTIMER2_DriverIRQHandler &rArr; CTIMER_GenericIRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER_GenericIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[53]"></a>CTIMER3_DriverIRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, fsl_ctimer.o(i.CTIMER3_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CTIMER3_DriverIRQHandler &rArr; CTIMER_GenericIRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER_GenericIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[6b]"></a>CTIMER4_DriverIRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, fsl_ctimer.o(i.CTIMER4_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CTIMER4_DriverIRQHandler &rArr; CTIMER_GenericIRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER_GenericIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[e1]"></a>CTIMER_GenericIRQHandler</STRONG> (Thumb, 110 bytes, Stack size 24 bytes, fsl_ctimer.o(i.CTIMER_GenericIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = CTIMER_GenericIRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER_ClearStatusFlags
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER4_DriverIRQHandler
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER3_DriverIRQHandler
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER2_DriverIRQHandler
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER1_DriverIRQHandler
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER0_DriverIRQHandler
+</UL>
+
+<P><STRONG><a name="[47]"></a>DMA0_DriverIRQHandler</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, fsl_dma.o(i.DMA0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DMA0_DriverIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[e3]"></a>DMA_AbortTransfer</STRONG> (Thumb, 268 bytes, Stack size 16 bytes, fsl_dma.o(i.DMA_AbortTransfer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = DMA_AbortTransfer &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TransferAbortDMA
+</UL>
+
+<P><STRONG><a name="[e4]"></a>DMA_CreateDescriptor</STRONG> (Thumb, 174 bytes, Stack size 32 bytes, fsl_dma.o(i.DMA_CreateDescriptor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetupXferCFG
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetupDescriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SubmitTransfer
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_AddTransferDMA
+</UL>
+
+<P><STRONG><a name="[e7]"></a>DMA_CreateHandle</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, fsl_dma.o(i.DMA_CreateHandle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = DMA_CreateHandle &rArr; DMA_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_GetInstance
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+</UL>
+
+<P><STRONG><a name="[121]"></a>DMA_Init</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, fsl_dma.o(i.DMA_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+</UL>
+
+<P><STRONG><a name="[ea]"></a>DMA_PrepareTransfer</STRONG> (Thumb, 230 bytes, Stack size 40 bytes, fsl_dma.o(i.DMA_PrepareTransfer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = DMA_PrepareTransfer &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferReceiveDMA
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+</UL>
+
+<P><STRONG><a name="[ec]"></a>DMA_SetCallback</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, fsl_dma.o(i.DMA_SetCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = DMA_SetCallback &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferCreateHandleDMA
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferCreateHandleDMA
+</UL>
+
+<P><STRONG><a name="[ee]"></a>DMA_StartTransfer</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, fsl_dma.o(i.DMA_StartTransfer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = DMA_StartTransfer &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferReceiveDMA
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+</UL>
+
+<P><STRONG><a name="[ef]"></a>DMA_SubmitTransfer</STRONG> (Thumb, 230 bytes, Stack size 24 bytes, fsl_dma.o(i.DMA_SubmitTransfer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = DMA_SubmitTransfer &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateDescriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferReceiveDMA
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+</UL>
+
+<P><STRONG><a name="[5f]"></a>DMIC0_DriverIRQHandler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, fsl_dmic.o(i.DMIC0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMIC0_DriverIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[126]"></a>DMIC_ConfigChannel</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, fsl_dmic.o(i.DMIC_ConfigChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DMIC_ConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+</UL>
+
+<P><STRONG><a name="[123]"></a>DMIC_ConfigIO</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fsl_dmic.o(i.DMIC_ConfigIO))
+<BR><BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+</UL>
+
+<P><STRONG><a name="[128]"></a>DMIC_EnableChannnel</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fsl_dmic.o(i.DMIC_EnableChannnel))
+<BR><BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+</UL>
+
+<P><STRONG><a name="[127]"></a>DMIC_FifoChannel</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, fsl_dmic.o(i.DMIC_FifoChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DMIC_FifoChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+</UL>
+
+<P><STRONG><a name="[f0]"></a>DMIC_GetInstance</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, fsl_dmic.o(i.DMIC_GetInstance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = DMIC_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferCreateHandleDMA
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_Init
+</UL>
+
+<P><STRONG><a name="[f1]"></a>DMIC_Init</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, fsl_dmic.o(i.DMIC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = DMIC_Init &rArr; RESET_PeripheralReset &rArr; RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_GetInstance
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+</UL>
+
+<P><STRONG><a name="[125]"></a>DMIC_SetOperationMode</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, fsl_dmic.o(i.DMIC_SetOperationMode))
+<BR><BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+</UL>
+
+<P><STRONG><a name="[f2]"></a>DMIC_TransferCreateHandleDMA</STRONG> (Thumb, 144 bytes, Stack size 32 bytes, fsl_dmic_dma.o(i.DMIC_TransferCreateHandleDMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = DMIC_TransferCreateHandleDMA &rArr; DMIC_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_GetInstance
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetCallback
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+</UL>
+
+<P><STRONG><a name="[f3]"></a>DMIC_TransferReceiveDMA</STRONG> (Thumb, 164 bytes, Stack size 64 bytes, fsl_dmic_dma.o(i.DMIC_TransferReceiveDMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = DMIC_TransferReceiveDMA &rArr; DMA_SubmitTransfer &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SubmitTransfer
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_StartTransfer
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_PrepareTransfer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_UserCallback
+</UL>
+
+<P><STRONG><a name="[124]"></a>DMIC_Use2fs</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fsl_dmic.o(i.DMIC_Use2fs))
+<BR><BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+</UL>
+
+<P><STRONG><a name="[84]"></a>DMIC_UserCallback</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, dma.o(i.DMIC_UserCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = DMIC_UserCallback &rArr; DMIC_TransferReceiveDMA &rArr; DMA_SubmitTransfer &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferReceiveDMA
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dma.o(i.Init_DMA)
+</UL>
+<P><STRONG><a name="[a8]"></a>DbgConsole_Init</STRONG> (Thumb, 74 bytes, Stack size 32 bytes, fsl_debug_console.o(i.DbgConsole_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 292<LI>Call Chain = DbgConsole_Init &rArr; USART_Init &rArr; USART_SetBaudRate &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetDefaultConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitDebugConsole
+</UL>
+
+<P><STRONG><a name="[f6]"></a>DbgConsole_Printf</STRONG> (Thumb, 44 bytes, Stack size 32 bytes, fsl_debug_console.o(i.DbgConsole_Printf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_PrintfFormattedData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[82]"></a>DbgConsole_Putchar</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, fsl_debug_console.o(i.DbgConsole_Putchar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DbgConsole_Putchar
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> fsl_debug_console.o(i.DbgConsole_Printf)
+</UL>
+<P><STRONG><a name="[b4]"></a>EMC_DynamicMemInit</STRONG> (Thumb, 596 bytes, Stack size 48 bytes, fsl_emc.o(i.EMC_DynamicMemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = EMC_DynamicMemInit &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_ModeOffset
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_CalculateTimerCycles
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitSDRAM
+</UL>
+
+<P><STRONG><a name="[b3]"></a>EMC_Init</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, fsl_emc.o(i.EMC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = EMC_Init &rArr; EMC_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_GetInstance
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitSDRAM
+</UL>
+
+<P><STRONG><a name="[77]"></a>ETHERNET_DriverIRQHandler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, fsl_enet.o(i.ETHERNET_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ETHERNET_DriverIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[54]"></a>FLEXCOMM0_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM0_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[55]"></a>FLEXCOMM1_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM1_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM1_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[56]"></a>FLEXCOMM2_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM2_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM2_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[57]"></a>FLEXCOMM3_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM3_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM3_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[58]"></a>FLEXCOMM4_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM4_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM4_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[59]"></a>FLEXCOMM5_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM5_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM5_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[6e]"></a>FLEXCOMM8_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM8_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM8_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[6f]"></a>FLEXCOMM9_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM9_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = FLEXCOMM9_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[fe]"></a>FLEXCOMM_GetInstance</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, fsl_flexcomm.o(i.FLEXCOMM_GetInstance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = FLEXCOMM_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_Init
+</UL>
+
+<P><STRONG><a name="[ff]"></a>FLEXCOMM_Init</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, fsl_flexcomm.o(i.FLEXCOMM_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = FLEXCOMM_Init &rArr; FLEXCOMM_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_SetPeriph
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_GetInstance
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxInit
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterInit
+</UL>
+
+<P><STRONG><a name="[100]"></a>FLEXCOMM_SetPeriph</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, fsl_flexcomm.o(i.FLEXCOMM_SetPeriph))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = FLEXCOMM_SetPeriph &rArr; FLEXCOMM_PeripheralIsPresent
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_PeripheralIsPresent
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_Init
+</UL>
+
+<P><STRONG><a name="[48]"></a>GINT0_DriverIRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, fsl_gint.o(i.GINT0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GINT0_DriverIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[49]"></a>GINT1_DriverIRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, fsl_gint.o(i.GINT1_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GINT1_DriverIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[24]"></a>HWVAD0_IRQHandler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, fsl_dmic.o(i.HWVAD0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HWVAD0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[119]"></a>I2C_MasterGetDefaultConfig</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fsl_i2c.o(i.I2C_MasterGetDefaultConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[102]"></a>I2C_MasterInit</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, fsl_i2c.o(i.I2C_MasterInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = I2C_MasterInit &rArr; FLEXCOMM_Init &rArr; FLEXCOMM_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterEnable
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_Init
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterSetBaudRate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[105]"></a>I2C_MasterReadBlocking</STRONG> (Thumb, 184 bytes, Stack size 40 bytes, fsl_i2c.o(i.I2C_MasterReadBlocking))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = I2C_MasterReadBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PendingStatusWait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+</UL>
+
+<P><STRONG><a name="[104]"></a>I2C_MasterSetBaudRate</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, fsl_i2c.o(i.I2C_MasterSetBaudRate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = I2C_MasterSetBaudRate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterInit
+</UL>
+
+<P><STRONG><a name="[108]"></a>I2C_MasterStart</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, fsl_i2c.o(i.I2C_MasterStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = I2C_MasterStart &rArr; I2C_PendingStatusWait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PendingStatusWait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterRepeatedStart
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+</UL>
+
+<P><STRONG><a name="[109]"></a>I2C_MasterStop</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, fsl_i2c.o(i.I2C_MasterStop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = I2C_MasterStop &rArr; I2C_PendingStatusWait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PendingStatusWait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+</UL>
+
+<P><STRONG><a name="[10a]"></a>I2C_MasterTransferBlocking</STRONG> (Thumb, 218 bytes, Stack size 32 bytes, fsl_i2c.o(i.I2C_MasterTransferBlocking))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterRepeatedStart
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterWriteBlocking
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterStop
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterStart
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterReadBlocking
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_WriteRegister
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ReadRegister
+</UL>
+
+<P><STRONG><a name="[10b]"></a>I2C_MasterWriteBlocking</STRONG> (Thumb, 202 bytes, Stack size 40 bytes, fsl_i2c.o(i.I2C_MasterWriteBlocking))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PendingStatusWait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+</UL>
+
+<P><STRONG><a name="[83]"></a>I2S_DMACallback</STRONG> (Thumb, 398 bytes, Stack size 32 bytes, fsl_i2s_dma.o(i.I2S_DMACallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 340<LI>Call Chain = I2S_DMACallback &rArr; I2S_AddTransferDMA &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TransferAbortDMA
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_AddTransferDMA
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> fsl_i2s_dma.o(i.I2S_TxTransferCreateHandleDMA)
+</UL>
+<P><STRONG><a name="[110]"></a>I2S_TransferAbortDMA</STRONG> (Thumb, 162 bytes, Stack size 24 bytes, fsl_i2s_dma.o(i.I2S_TransferAbortDMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = I2S_TransferAbortDMA &rArr; DMA_AbortTransfer &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_AbortTransfer
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxEnableDMA
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_RxEnableDMA
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_GetInstance
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_DMACallback
+</UL>
+
+<P><STRONG><a name="[11d]"></a>I2S_TxGetDefaultConfig</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, fsl_i2s.o(i.I2S_TxGetDefaultConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[115]"></a>I2S_TxInit</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, fsl_i2s.o(i.I2S_TxInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = I2S_TxInit &rArr; FLEXCOMM_Init &rArr; FLEXCOMM_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_Init
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[116]"></a>I2S_TxTransferCreateHandleDMA</STRONG> (Thumb, 120 bytes, Stack size 32 bytes, fsl_i2s_dma.o(i.I2S_TxTransferCreateHandleDMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = I2S_TxTransferCreateHandleDMA &rArr; DMA_SetCallback &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetCallback
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_GetInstance
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+</UL>
+
+<P><STRONG><a name="[117]"></a>I2S_TxTransferSendDMA</STRONG> (Thumb, 60 bytes, Stack size 40 bytes, fsl_i2s_dma.o(i.I2S_TxTransferSendDMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 428<LI>Call Chain = I2S_TxTransferSendDMA &rArr; I2S_StartTransferDMA &rArr; I2S_AddTransferDMA &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_EnqueueUserBuffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;codecTxCallback
+</UL>
+
+<P><STRONG><a name="[158]"></a>InitAllBuffers</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, main.o(i.InitAllBuffers))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[118]"></a>InitAudio_CODEC</STRONG> (Thumb, 198 bytes, Stack size 80 bytes, audio.o(i.InitAudio_CODEC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 452<LI>Call Chain = InitAudio_CODEC &rArr; WM8904_Init &rArr; WM8904_SetProtocol &rArr; WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Printf
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLPrec
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLData
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPllOutFreq
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_AttachClk
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxInit
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxGetDefaultConfig
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterInit
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterGetDefaultConfig
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetVolume
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_Init
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_GetDefaultConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[120]"></a>Init_DMA</STRONG> (Thumb, 158 bytes, Stack size 16 bytes, dma.o(i.Init_DMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 444<LI>Call Chain = Init_DMA &rArr; I2S_TxTransferSendDMA &rArr; I2S_StartTransferDMA &rArr; I2S_AddTransferDMA &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferReceiveDMA
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferCreateHandleDMA
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Init
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateHandle
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferSendDMA
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferCreateHandleDMA
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetChannelPriority
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_EnableChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[122]"></a>Init_DMIC</STRONG> (Thumb, 190 bytes, Stack size 32 bytes, audio.o(i.Init_DMIC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = Init_DMIC &rArr; DMIC_Init &rArr; RESET_PeripheralReset &rArr; RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_Use2fs
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_SetOperationMode
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_Init
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_FifoChannel
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_EnableChannnel
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_ConfigIO
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_ConfigChannel
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_AttachClk
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[12d]"></a>LCDC_ClearInterruptsStatus</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, fsl_lcdc.o(i.LCDC_ClearInterruptsStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_IRQHandler
+</UL>
+
+<P><STRONG><a name="[9e]"></a>LCDC_EnableInterrupts</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, fsl_lcdc.o(i.LCDC_EnableInterrupts))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_LCDC_Init
+</UL>
+
+<P><STRONG><a name="[9b]"></a>LCDC_GetDefaultConfig</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, fsl_lcdc.o(i.LCDC_GetDefaultConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_LCDC_Init
+</UL>
+
+<P><STRONG><a name="[12c]"></a>LCDC_GetEnabledInterruptsPendingStatus</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fsl_lcdc.o(i.LCDC_GetEnabledInterruptsPendingStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_IRQHandler
+</UL>
+
+<P><STRONG><a name="[9d]"></a>LCDC_Init</STRONG> (Thumb, 362 bytes, Stack size 32 bytes, fsl_lcdc.o(i.LCDC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = LCDC_Init &rArr; RESET_PeripheralReset &rArr; RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_GetInstance
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_GetClockDivider
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_EnableClock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_LCDC_Init
+</UL>
+
+<P><STRONG><a name="[3f]"></a>LCD_IRQHandler</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, egfx_driver_lpcxpresso_54608.o(i.LCD_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LCD_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_GetEnabledInterruptsPendingStatus
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_ClearInterruptsStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[12e]"></a>PINT_PatternMatchResetDetectLogic</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, fsl_pint.o(i.PINT_PatternMatchResetDetectLogic))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT7_DriverIRQHandler
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT6_DriverIRQHandler
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT5_DriverIRQHandler
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT4_DriverIRQHandler
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT3_DriverIRQHandler
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT2_DriverIRQHandler
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT1_DriverIRQHandler
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT0_DriverIRQHandler
+</UL>
+
+<P><STRONG><a name="[4a]"></a>PIN_INT0_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT0_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[4b]"></a>PIN_INT1_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT1_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT1_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[4c]"></a>PIN_INT2_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT2_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT2_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[4d]"></a>PIN_INT3_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT3_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT3_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[66]"></a>PIN_INT4_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT4_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT4_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[67]"></a>PIN_INT5_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT5_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT5_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[68]"></a>PIN_INT6_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT6_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT6_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[69]"></a>PIN_INT7_DriverIRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_pint.o(i.PIN_INT7_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PIN_INT7_DriverIRQHandler &rArr; PINT_PatternMatchResetDetectLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PatternMatchResetDetectLogic
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINT_PinInterruptClrStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[de]"></a>POWER_SetPLL</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, fsl_power_lib.o(i.POWER_SetPLL))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLPrec
+</UL>
+
+<P><STRONG><a name="[a0]"></a>POWER_SetVoltageForFreq</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, fsl_power_lib.o(i.POWER_SetVoltageForFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = POWER_SetVoltageForFreq &rArr; POWER_setVdLevel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_setVdLevel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_BootClock_PLL_RUN
+</UL>
+
+<P><STRONG><a name="[130]"></a>POWER_setVdLevel</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, fsl_power_lib.o(i.POWER_setVdLevel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = POWER_setVdLevel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;POWER_SetVoltageForFreq
+</UL>
+
+<P><STRONG><a name="[131]"></a>RESET_ClearPeripheralReset</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, fsl_reset.o(i.RESET_ClearPeripheralReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = RESET_ClearPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+</UL>
+
+<P><STRONG><a name="[a7]"></a>RESET_PeripheralReset</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, fsl_reset.o(i.RESET_PeripheralReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = RESET_PeripheralReset &rArr; RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_SetPeripheralReset
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_ClearPeripheralReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_Init
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_Init
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_Init
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitDebugConsole
+</UL>
+
+<P><STRONG><a name="[132]"></a>RESET_SetPeripheralReset</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, fsl_reset.o(i.RESET_SetPeripheralReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+</UL>
+
+<P><STRONG><a name="[16]"></a>SCT0_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, fsl_sctimer.o(i.SCT0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SCT0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(RESET)
+</UL>
+<P><STRONG><a name="[134]"></a>SCTIMER_CreateAndScheduleEvent</STRONG> (Thumb, 456 bytes, Stack size 28 bytes, fsl_sctimer.o(i.SCTIMER_CreateAndScheduleEvent))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SCTIMER_CreateAndScheduleEvent
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_SetupPwm
+</UL>
+
+<P><STRONG><a name="[86]"></a>SCTIMER_EventHandleIRQ</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, fsl_sctimer.o(i.SCTIMER_EventHandleIRQ))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SCTIMER_EventHandleIRQ
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> fsl_sctimer.o(i.SCTIMER_Init)
+</UL>
+<P><STRONG><a name="[ac]"></a>SCTIMER_GetDefaultConfig</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, fsl_sctimer.o(i.SCTIMER_GetDefaultConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = SCTIMER_GetDefaultConfig &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPWM
+</UL>
+
+<P><STRONG><a name="[ad]"></a>SCTIMER_Init</STRONG> (Thumb, 222 bytes, Stack size 24 bytes, fsl_sctimer.o(i.SCTIMER_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = SCTIMER_Init &rArr; RESET_PeripheralReset &rArr; RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_PeripheralReset
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_GetInstance
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPWM
+</UL>
+
+<P><STRONG><a name="[ae]"></a>SCTIMER_SetupPwm</STRONG> (Thumb, 426 bytes, Stack size 56 bytes, fsl_sctimer.o(i.SCTIMER_SetupPwm))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = SCTIMER_SetupPwm &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_CreateAndScheduleEvent
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_SetupOutputSetAction
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_SetupOutputClearAction
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPWM
+</UL>
+
+<P><STRONG><a name="[70]"></a>SDIO_DriverIRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fsl_sdif.o(i.SDIO_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = SDIO_DriverIRQHandler &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[44]"></a>SystemInit</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, system_lpc54608.o(i.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[f4]"></a>USART_GetDefaultConfig</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, fsl_usart.o(i.USART_GetDefaultConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = USART_GetDefaultConfig &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
+</UL>
+
+<P><STRONG><a name="[f5]"></a>USART_Init</STRONG> (Thumb, 226 bytes, Stack size 24 bytes, fsl_usart.o(i.USART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = USART_Init &rArr; USART_SetBaudRate &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_Init
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SetBaudRate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Init
+</UL>
+
+<P><STRONG><a name="[81]"></a>USART_ReadBlocking</STRONG> (Thumb, 188 bytes, Stack size 24 bytes, fsl_usart.o(i.USART_ReadBlocking))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = USART_ReadBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> fsl_debug_console.o(i.DbgConsole_Init)
+</UL>
+<P><STRONG><a name="[137]"></a>USART_SetBaudRate</STRONG> (Thumb, 152 bytes, Stack size 48 bytes, fsl_usart.o(i.USART_SetBaudRate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = USART_SetBaudRate &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+</UL>
+
+<P><STRONG><a name="[80]"></a>USART_WriteBlocking</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, fsl_usart.o(i.USART_WriteBlocking))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = USART_WriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> fsl_debug_console.o(i.DbgConsole_Init)
+</UL>
+<P><STRONG><a name="[4e]"></a>UTICK0_DriverIRQHandler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, fsl_utick.o(i.UTICK0_DriverIRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UTICK0_DriverIRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc54608.o(.text)
+</UL>
+<P><STRONG><a name="[11a]"></a>WM8904_GetDefaultConfig</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, fsl_wm8904.o(i.WM8904_GetDefaultConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[11b]"></a>WM8904_Init</STRONG> (Thumb, 548 bytes, Stack size 16 bytes, fsl_wm8904.o(i.WM8904_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 372<LI>Call Chain = WM8904_Init &rArr; WM8904_SetProtocol &rArr; WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetProtocol
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetMasterSlave
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetAudioFormat
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_WriteRegister
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_WaitOnWriteSequencer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[13c]"></a>WM8904_SetAudioFormat</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, fsl_wm8904.o(i.WM8904_SetAudioFormat))
+<BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = WM8904_SetAudioFormat &rArr; WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_WriteRegister
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ModifyRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_Init
+</UL>
+
+<P><STRONG><a name="[13a]"></a>WM8904_SetMasterSlave</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fsl_wm8904.o(i.WM8904_SetMasterSlave))
+<BR><BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_Init
+</UL>
+
+<P><STRONG><a name="[13b]"></a>WM8904_SetProtocol</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, fsl_wm8904.o(i.WM8904_SetProtocol))
+<BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = WM8904_SetProtocol &rArr; WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ModifyRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_Init
+</UL>
+
+<P><STRONG><a name="[11c]"></a>WM8904_SetVolume</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, fsl_wm8904.o(i.WM8904_SetVolume))
+<BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = WM8904_SetVolume &rArr; WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ModifyRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[13f]"></a>__0vsnprintf</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, printfa.o(i.__0vsnprintf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[16e]"></a>__1vsnprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0vsnprintf), UNUSED)
+
+<P><STRONG><a name="[16f]"></a>__2vsnprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0vsnprintf), UNUSED)
+
+<P><STRONG><a name="[170]"></a>__c89vsnprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0vsnprintf), UNUSED)
+
+<P><STRONG><a name="[153]"></a>vsnprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0vsnprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = vsnprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_printf
+</UL>
+
+<P><STRONG><a name="[a9]"></a>__aeabi_assert</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, fsl_common.o(i.__aeabi_assert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_WriteBlocking
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ReadBlocking
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetDefaultConfig
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_GetInstance
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferReceiveDMA
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferCreateHandleDMA
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_TransferReceiveDMACallback
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_Init
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMIC_GetInstance
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SubmitTransfer
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_StartTransfer
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetCallback
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_PrepareTransfer
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateHandle
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateDescriptor
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_AbortTransfer
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetupXferCFG
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_GetInstance
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_GetInstance
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM9_DriverIRQHandler
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM8_DriverIRQHandler
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM5_DriverIRQHandler
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM4_DriverIRQHandler
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM3_DriverIRQHandler
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM2_DriverIRQHandler
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM1_DriverIRQHandler
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM0_DriverIRQHandler
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_DynamicMemInit
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_Init
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_GetInstance
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferCreateHandleDMA
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TransferAbortDMA
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_DMACallback
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_GetInstance
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_EnqueueUserBuffer
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_Config
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterWriteBlocking
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterReadBlocking
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_SetupPwm
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_GetDefaultConfig
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_GetInstance
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_SetPeripheralReset
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RESET_ClearPeripheralReset
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN1_IRQ1_DriverIRQHandler
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN1_IRQ0_DriverIRQHandler
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN0_IRQ1_DriverIRQHandler
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN0_IRQ0_DriverIRQHandler
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SetBaudRate
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDIO_DriverIRQHandler
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitDebugConsole
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetChannelPriority
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_EnableChannel
+</UL>
+
+<P><STRONG><a name="[171]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[172]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[173]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[159]"></a>arm_fir_decimate_f32</STRONG> (Thumb, 596 bytes, Stack size 56 bytes, arm_fir_decimate_f32.o(i.arm_fir_decimate_f32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = arm_fir_decimate_f32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[146]"></a>arm_fir_decimate_init_f32</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, arm_fir_decimate_init_f32.o(i.arm_fir_decimate_init_f32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = arm_fir_decimate_init_f32
+</UL>
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[85]"></a>codecTxCallback</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, dma.o(i.codecTxCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 460<LI>Call Chain = codecTxCallback &rArr; I2S_TxTransferSendDMA &rArr; I2S_StartTransferDMA &rArr; I2S_AddTransferDMA &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferSendDMA
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dma.o(i.Init_DMA)
+</UL>
+<P><STRONG><a name="[14e]"></a>eGFX_BitStreamGet</STRONG> (Thumb, 20 bytes, Stack size 12 bytes, egfx.o(i.eGFX_BitStreamGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = eGFX_BitStreamGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_GetPixel
+</UL>
+
+<P><STRONG><a name="[151]"></a>eGFX_BitStreamPut</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, egfx.o(i.eGFX_BitStreamPut))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = eGFX_BitStreamPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_PutPixel
+</UL>
+
+<P><STRONG><a name="[147]"></a>eGFX_Blit</STRONG> (Thumb, 74 bytes, Stack size 32 bytes, egfx.o(i.eGFX_Blit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = eGFX_Blit &rArr; eGFX_PutPixel &rArr; eGFX_BitStreamPut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_PutPixel
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_GetPixel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_DrawCharacter
+</UL>
+
+<P><STRONG><a name="[14a]"></a>eGFX_DrawCharacter</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, egfx.o(i.eGFX_DrawCharacter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = eGFX_DrawCharacter &rArr; eGFX_Blit &rArr; eGFX_PutPixel &rArr; eGFX_BitStreamPut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_Blit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_DrawString
+</UL>
+
+<P><STRONG><a name="[14b]"></a>eGFX_DrawString</STRONG> (Thumb, 76 bytes, Stack size 36 bytes, egfx.o(i.eGFX_DrawString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = eGFX_DrawString &rArr; eGFX_DrawCharacter &rArr; eGFX_Blit &rArr; eGFX_PutPixel &rArr; eGFX_BitStreamPut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_DrawCharacter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_printf
+</UL>
+
+<P><STRONG><a name="[14c]"></a>eGFX_Dump</STRONG> (Thumb, 68 bytes, Stack size 4 bytes, egfx_driver_lpcxpresso_54608.o(i.eGFX_Dump))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = eGFX_Dump
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_WaitForVSync
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[148]"></a>eGFX_GetPixel</STRONG> (Thumb, 334 bytes, Stack size 36 bytes, egfx.o(i.eGFX_GetPixel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = eGFX_GetPixel &rArr; eGFX_BitStreamGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_BitStreamGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_Blit
+</UL>
+
+<P><STRONG><a name="[154]"></a>eGFX_GetStringWidth</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, egfx.o(i.eGFX_GetStringWidth))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = eGFX_GetStringWidth
+</UL>
+<BR>[Called By]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_printf
+</UL>
+
+<P><STRONG><a name="[150]"></a>eGFX_ImagePlaneInit</STRONG> (Thumb, 14 bytes, Stack size 12 bytes, egfx.o(i.eGFX_ImagePlaneInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = eGFX_ImagePlaneInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_InitDriver
+</UL>
+
+<P><STRONG><a name="[15a]"></a>eGFX_ImagePlane_Clear</STRONG> (Thumb, 206 bytes, Stack size 8 bytes, egfx.o(i.eGFX_ImagePlane_Clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = eGFX_ImagePlane_Clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[14f]"></a>eGFX_InitDriver</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, egfx_driver_lpcxpresso_54608.o(i.eGFX_InitDriver))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = eGFX_InitDriver &rArr; APP_LCDC_Init &rArr; LCDC_Init &rArr; RESET_PeripheralReset &rArr; RESET_SetPeripheralReset &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetClkDiv
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_AttachClk
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_LCDC_Init
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPWM
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_ImagePlaneInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[149]"></a>eGFX_PutPixel</STRONG> (Thumb, 350 bytes, Stack size 48 bytes, egfx.o(i.eGFX_PutPixel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = eGFX_PutPixel &rArr; eGFX_BitStreamPut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_BitStreamPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_Blit
+</UL>
+
+<P><STRONG><a name="[14d]"></a>eGFX_WaitForVSync</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, egfx_driver_lpcxpresso_54608.o(i.eGFX_WaitForVSync))
+<BR><BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_Dump
+</UL>
+
+<P><STRONG><a name="[152]"></a>eGFX_printf</STRONG> (Thumb, 68 bytes, Stack size 32 bytes, egfx.o(i.eGFX_printf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = eGFX_printf &rArr; eGFX_DrawString &rArr; eGFX_DrawCharacter &rArr; eGFX_Blit &rArr; eGFX_PutPixel &rArr; eGFX_BitStreamPut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vsnprintf
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_GetStringWidth
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_DrawString
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[43]"></a>main</STRONG> (Thumb, 444 bytes, Stack size 16 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 468<LI>Call Chain = main &rArr; InitAudio_CODEC &rArr; WM8904_Init &rArr; WM8904_SetProtocol &rArr; WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_AttachClk
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_printf
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_InitDriver
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_ImagePlane_Clear
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_Dump
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_fir_decimate_init_f32
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_fir_decimate_f32
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitSDRAM
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPins
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitDebugConsole
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAllBuffers
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_BootClock_PLL_RUN
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL><P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[f8]"></a>DbgConsole_ConvertRadixNumToString</STRONG> (Thumb, 168 bytes, Stack size 36 bytes, fsl_debug_console.o(i.DbgConsole_ConvertRadixNumToString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_PrintfFormattedData
+</UL>
+
+<P><STRONG><a name="[f7]"></a>DbgConsole_PrintfFormattedData</STRONG> (Thumb, 570 bytes, Stack size 120 bytes, fsl_debug_console.o(i.DbgConsole_PrintfFormattedData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_PrintfPaddingCharacter
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_ConvertRadixNumToString
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_Printf
+</UL>
+
+<P><STRONG><a name="[f9]"></a>DbgConsole_PrintfPaddingCharacter</STRONG> (Thumb, 40 bytes, Stack size 32 bytes, fsl_debug_console.o(i.DbgConsole_PrintfPaddingCharacter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DbgConsole_PrintfPaddingCharacter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DbgConsole_PrintfFormattedData
+</UL>
+
+<P><STRONG><a name="[dd]"></a>CLOCK_Enable_SysOsc</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_Enable_SysOsc))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLPrec
+</UL>
+
+<P><STRONG><a name="[c2]"></a>CLOCK_GetAudioPLLOutFromSetupUpdate</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, fsl_clock.o(i.CLOCK_GetAudioPLLOutFromSetupUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = CLOCK_GetAudioPLLOutFromSetupUpdate &rArr; CLOCK_GetAudioPLLOutFromSetup &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetup
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLPrec
+</UL>
+
+<P><STRONG><a name="[d1]"></a>CLOCK_GetPllConfig</STRONG> (Thumb, 300 bytes, Stack size 72 bytes, fsl_clock.o(i.CLOCK_GetPllConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = CLOCK_GetPllConfig &rArr; pllFindSel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pllFindSel
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pllEncodeP
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pllEncodeN
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pllEncodeM
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FindGreatestCommonDivisor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupPLLData
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLData
+</UL>
+
+<P><STRONG><a name="[d9]"></a>CLOCK_GetSystemPLLOutFromSetupUpdate</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, fsl_clock.o(i.CLOCK_GetSystemPLLOutFromSetupUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = CLOCK_GetSystemPLLOutFromSetupUpdate &rArr; CLOCK_GetSystemPLLOutFromSetup &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetup
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+</UL>
+
+<P><STRONG><a name="[da]"></a>CLOCK_SetFLASHAccessCycles</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fsl_clock.o(i.CLOCK_SetFLASHAccessCycles))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetFLASHAccessCyclesForFreq
+</UL>
+
+<P><STRONG><a name="[d2]"></a>FindGreatestCommonDivisor</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, fsl_clock.o(i.FindGreatestCommonDivisor))
+<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllConfig
+</UL>
+
+<P><STRONG><a name="[e0]"></a>POWER_DisablePD</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fsl_clock.o(i.POWER_DisablePD))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLPrec
+</UL>
+
+<P><STRONG><a name="[df]"></a>POWER_EnablePD</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fsl_clock.o(i.POWER_EnablePD))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupSystemPLLPrec
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetupAudioPLLPrec
+</UL>
+
+<P><STRONG><a name="[c1]"></a>findPllMMult</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, fsl_clock.o(i.findPllMMult))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = findPllMMult &rArr; pllDecodeM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pllDecodeM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetup
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetup
+</UL>
+
+<P><STRONG><a name="[c0]"></a>findPllPostDiv</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, fsl_clock.o(i.findPllPostDiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = findPllPostDiv &rArr; pllDecodeP
+</UL>
+<BR>[Calls]<UL><LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pllDecodeP
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetup
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetup
+</UL>
+
+<P><STRONG><a name="[bf]"></a>findPllPreDiv</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, fsl_clock.o(i.findPllPreDiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = findPllPreDiv &rArr; pllDecodeN
+</UL>
+<BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pllDecodeN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetSystemPLLOutFromSetup
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetAudioPLLOutFromSetup
+</UL>
+
+<P><STRONG><a name="[155]"></a>pllDecodeM</STRONG> (Thumb, 88 bytes, Stack size 12 bytes, fsl_clock.o(i.pllDecodeM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = pllDecodeM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllMMult
+</UL>
+
+<P><STRONG><a name="[157]"></a>pllDecodeN</STRONG> (Thumb, 92 bytes, Stack size 12 bytes, fsl_clock.o(i.pllDecodeN))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = pllDecodeN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllPreDiv
+</UL>
+
+<P><STRONG><a name="[156]"></a>pllDecodeP</STRONG> (Thumb, 78 bytes, Stack size 12 bytes, fsl_clock.o(i.pllDecodeP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = pllDecodeP
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;findPllPostDiv
+</UL>
+
+<P><STRONG><a name="[d4]"></a>pllEncodeM</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, fsl_clock.o(i.pllEncodeM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pllEncodeM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllConfig
+</UL>
+
+<P><STRONG><a name="[d5]"></a>pllEncodeN</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, fsl_clock.o(i.pllEncodeN))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pllEncodeN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllConfig
+</UL>
+
+<P><STRONG><a name="[d6]"></a>pllEncodeP</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, fsl_clock.o(i.pllEncodeP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pllEncodeP
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllConfig
+</UL>
+
+<P><STRONG><a name="[d3]"></a>pllFindSel</STRONG> (Thumb, 114 bytes, Stack size 12 bytes, fsl_clock.o(i.pllFindSel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = pllFindSel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetPllConfig
+</UL>
+
+<P><STRONG><a name="[e2]"></a>CTIMER_ClearStatusFlags</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, fsl_ctimer.o(i.CTIMER_ClearStatusFlags))
+<BR><BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTIMER_GenericIRQHandler
+</UL>
+
+<P><STRONG><a name="[e8]"></a>DMA_GetInstance</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, fsl_dma.o(i.DMA_GetInstance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = DMA_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateHandle
+</UL>
+
+<P><STRONG><a name="[e6]"></a>DMA_SetupDescriptor</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, fsl_dma.o(i.DMA_SetupDescriptor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA_SetupDescriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateDescriptor
+</UL>
+
+<P><STRONG><a name="[e5]"></a>DMA_SetupXferCFG</STRONG> (Thumb, 340 bytes, Stack size 24 bytes, fsl_dma.o(i.DMA_SetupXferCFG))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateDescriptor
+</UL>
+
+<P><STRONG><a name="[7f]"></a>DMIC_TransferReceiveDMACallback</STRONG> (Thumb, 74 bytes, Stack size 32 bytes, fsl_dmic_dma.o(i.DMIC_TransferReceiveDMACallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = DMIC_TransferReceiveDMACallback &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> fsl_dmic_dma.o(i.DMIC_TransferCreateHandleDMA)
+</UL>
+<P><STRONG><a name="[fb]"></a>EMC_CalculateTimerCycles</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, fsl_emc.o(i.EMC_CalculateTimerCycles))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = EMC_CalculateTimerCycles &rArr; CLOCK_GetFreq &rArr; CLOCK_GetAsyncApbClkFreq &rArr; CLOCK_GetCoreSysClkFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_DynamicMemInit
+</UL>
+
+<P><STRONG><a name="[fd]"></a>EMC_GetInstance</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, fsl_emc.o(i.EMC_GetInstance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = EMC_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_Init
+</UL>
+
+<P><STRONG><a name="[fc]"></a>EMC_ModeOffset</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, fsl_emc.o(i.EMC_ModeOffset))
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EMC_DynamicMemInit
+</UL>
+
+<P><STRONG><a name="[101]"></a>FLEXCOMM_PeripheralIsPresent</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, fsl_flexcomm.o(i.FLEXCOMM_PeripheralIsPresent))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FLEXCOMM_PeripheralIsPresent
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLEXCOMM_SetPeriph
+</UL>
+
+<P><STRONG><a name="[10c]"></a>I2C_MasterClearStatusFlags</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fsl_i2c.o(i.I2C_MasterClearStatusFlags))
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_PendingStatusWait
+</UL>
+
+<P><STRONG><a name="[103]"></a>I2C_MasterEnable</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, fsl_i2c.o(i.I2C_MasterEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterInit
+</UL>
+
+<P><STRONG><a name="[107]"></a>I2C_MasterRepeatedStart</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, fsl_i2c.o(i.I2C_MasterRepeatedStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = I2C_MasterRepeatedStart &rArr; I2C_MasterStart &rArr; I2C_PendingStatusWait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterStart
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+</UL>
+
+<P><STRONG><a name="[106]"></a>I2C_PendingStatusWait</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, fsl_i2c.o(i.I2C_PendingStatusWait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = I2C_PendingStatusWait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterClearStatusFlags
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterWriteBlocking
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterStop
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterStart
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterReadBlocking
+</UL>
+
+<P><STRONG><a name="[10f]"></a>I2S_Config</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, fsl_i2s.o(i.I2S_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = I2S_Config &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxInit
+</UL>
+
+<P><STRONG><a name="[10d]"></a>I2S_AddTransferDMA</STRONG> (Thumb, 446 bytes, Stack size 64 bytes, fsl_i2s_dma.o(i.I2S_AddTransferDMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = I2S_AddTransferDMA &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CreateDescriptor
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_GetInstance
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_DMACallback
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+</UL>
+
+<P><STRONG><a name="[111]"></a>I2S_EnqueueUserBuffer</STRONG> (Thumb, 232 bytes, Stack size 40 bytes, fsl_i2s_dma.o(i.I2S_EnqueueUserBuffer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = I2S_EnqueueUserBuffer &rArr; I2S_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_GetInstance
+</UL>
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferSendDMA
+</UL>
+
+<P><STRONG><a name="[10e]"></a>I2S_GetInstance</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, fsl_i2s_dma.o(i.I2S_GetInstance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = I2S_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferCreateHandleDMA
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TransferAbortDMA
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_EnqueueUserBuffer
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_AddTransferDMA
+</UL>
+
+<P><STRONG><a name="[114]"></a>I2S_RxEnableDMA</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, fsl_i2s_dma.o(i.I2S_RxEnableDMA))
+<BR><BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TransferAbortDMA
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+</UL>
+
+<P><STRONG><a name="[112]"></a>I2S_StartTransferDMA</STRONG> (Thumb, 358 bytes, Stack size 80 bytes, fsl_i2s_dma.o(i.I2S_StartTransferDMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 388<LI>Call Chain = I2S_StartTransferDMA &rArr; I2S_AddTransferDMA &rArr; DMA_CreateDescriptor &rArr; DMA_SetupXferCFG &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SubmitTransfer
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_StartTransfer
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_PrepareTransfer
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxEnableDMA
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_RxEnableDMA
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_GetInstance
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_AddTransferDMA
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TxTransferSendDMA
+</UL>
+
+<P><STRONG><a name="[113]"></a>I2S_TxEnableDMA</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, fsl_i2s_dma.o(i.I2S_TxEnableDMA))
+<BR><BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_TransferAbortDMA
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2S_StartTransferDMA
+</UL>
+
+<P><STRONG><a name="[12b]"></a>CLOCK_EnableClock</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, fsl_lcdc.o(i.CLOCK_EnableClock))
+<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_Init
+</UL>
+
+<P><STRONG><a name="[12a]"></a>LCDC_GetClockDivider</STRONG> (Thumb, 238 bytes, Stack size 20 bytes, fsl_lcdc.o(i.LCDC_GetClockDivider))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LCDC_GetClockDivider
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_Init
+</UL>
+
+<P><STRONG><a name="[129]"></a>LCDC_GetInstance</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, fsl_lcdc.o(i.LCDC_GetInstance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = LCDC_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDC_Init
+</UL>
+
+<P><STRONG><a name="[12f]"></a>PINT_PinInterruptClrStatus</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, fsl_pint.o(i.PINT_PinInterruptClrStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT7_DriverIRQHandler
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT6_DriverIRQHandler
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT5_DriverIRQHandler
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT4_DriverIRQHandler
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT3_DriverIRQHandler
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT2_DriverIRQHandler
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT1_DriverIRQHandler
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIN_INT0_DriverIRQHandler
+</UL>
+
+<P><STRONG><a name="[133]"></a>SCTIMER_GetInstance</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, fsl_sctimer.o(i.SCTIMER_GetInstance))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = SCTIMER_GetInstance &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_Init
+</UL>
+
+<P><STRONG><a name="[136]"></a>SCTIMER_SetupOutputClearAction</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, fsl_sctimer.o(i.SCTIMER_SetupOutputClearAction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SCTIMER_SetupOutputClearAction
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_SetupPwm
+</UL>
+
+<P><STRONG><a name="[135]"></a>SCTIMER_SetupOutputSetAction</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, fsl_sctimer.o(i.SCTIMER_SetupOutputSetAction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SCTIMER_SetupOutputSetAction
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_SetupPwm
+</UL>
+
+<P><STRONG><a name="[b0]"></a>CLOCK_EnableClock</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, pin_mux.o(i.CLOCK_EnableClock))
+<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPins
+</UL>
+
+<P><STRONG><a name="[b1]"></a>IOCON_PinMuxSet</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, pin_mux.o(i.IOCON_PinMuxSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IOCON_PinMuxSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BOARD_InitPins
+</UL>
+
+<P><STRONG><a name="[aa]"></a>BOARD_InitPWM</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, egfx_driver_lpcxpresso_54608.o(i.BOARD_InitPWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = BOARD_InitPWM &rArr; SCTIMER_SetupPwm &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_SetClkDiv
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_GetFreq
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLOCK_AttachClk
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_SetupPwm
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCTIMER_GetDefaultConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eGFX_InitDriver
+</UL>
+
+<P><STRONG><a name="[13d]"></a>WM8904_ModifyRegister</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, fsl_wm8904.o(i.WM8904_ModifyRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 340<LI>Call Chain = WM8904_ModifyRegister &rArr; WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_WriteRegister
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ReadRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetVolume
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetProtocol
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetAudioFormat
+</UL>
+
+<P><STRONG><a name="[13e]"></a>WM8904_ReadRegister</STRONG> (Thumb, 76 bytes, Stack size 48 bytes, fsl_wm8904.o(i.WM8904_ReadRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = WM8904_ReadRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+</UL>
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_WaitOnWriteSequencer
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ModifyRegister
+</UL>
+
+<P><STRONG><a name="[139]"></a>WM8904_WaitOnWriteSequencer</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, fsl_wm8904.o(i.WM8904_WaitOnWriteSequencer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = WM8904_WaitOnWriteSequencer &rArr; WM8904_ReadRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ReadRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_Init
+</UL>
+
+<P><STRONG><a name="[138]"></a>WM8904_WriteRegister</STRONG> (Thumb, 76 bytes, Stack size 48 bytes, fsl_wm8904.o(i.WM8904_WriteRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = WM8904_WriteRegister &rArr; I2C_MasterTransferBlocking &rArr; I2C_MasterWriteBlocking &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterTransferBlocking
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_SetAudioFormat
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_Init
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM8904_ModifyRegister
+</UL>
+
+<P><STRONG><a name="[11f]"></a>NVIC_EnableIRQ</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, audio.o(i.NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[11e]"></a>NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, audio.o(i.NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMIC
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitAudio_CODEC
+</UL>
+
+<P><STRONG><a name="[e9]"></a>DMA_EnableChannel</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, dma.o(i.DMA_EnableChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = DMA_EnableChannel &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+</UL>
+
+<P><STRONG><a name="[ed]"></a>DMA_SetChannelPriority</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, dma.o(i.DMA_SetChannelPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = DMA_SetChannelPriority &rArr; __aeabi_assert &rArr; DbgConsole_Printf &rArr; DbgConsole_PrintfFormattedData &rArr; DbgConsole_ConvertRadixNumToString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_DMA
+</UL>
+
+<P><STRONG><a name="[141]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[140]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0vsnprintf
+</UL>
+
+<P><STRONG><a name="[144]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[143]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[87]"></a>_snputc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, printfa.o(i._snputc))
+<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0vsnprintf)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

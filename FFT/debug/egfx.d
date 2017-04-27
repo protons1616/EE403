@@ -1,0 +1,10 @@
+debug\egfx.o: SRC\eGFX\eGFX.c
+debug\egfx.o: SRC\eGFX\eGFX.h
+debug\egfx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+debug\egfx.o: SRC\eGFX\eGFX_DataTypes.h
+debug\egfx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+debug\egfx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+debug\egfx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+debug\egfx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+debug\egfx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+debug\egfx.o: SRC\eGFX\eGFX_DataTypes.h

@@ -1,0 +1,11 @@
+debug\system_lpc54608.o: SRC\System\system_LPC54608.c
+debug\system_lpc54608.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+debug\system_lpc54608.o: SRC\System\fsl_device_registers.h
+debug\system_lpc54608.o: SRC\System\LPC54608.h
+debug\system_lpc54608.o: .\SRC\System\CMSIS\Include\core_cm4.h
+debug\system_lpc54608.o: .\SRC\System\CMSIS\Include\core_cmInstr.h
+debug\system_lpc54608.o: .\SRC\System\CMSIS\Include\cmsis_armcc.h
+debug\system_lpc54608.o: .\SRC\System\CMSIS\Include\core_cmFunc.h
+debug\system_lpc54608.o: .\SRC\System\CMSIS\Include\core_cmSimd.h
+debug\system_lpc54608.o: SRC\System\system_LPC54608.h
+debug\system_lpc54608.o: SRC\System\LPC54608_features.h
