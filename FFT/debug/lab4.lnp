@@ -56,6 +56,6 @@
 "debug\audio.o"
 "debug\dma.o"
 --library_type=microlib --diag_suppress 6314 --strict --scatter "LPC54608J512_flash.scf"
-./LIB/keil_lib_power.lib ../CMSIS-DSP/LIB/CMSIS_DSP_4_5_O3.lib --remove --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+./LIB/keil_lib_power.lib --remove --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\output\lab4.map" -o debug\lab4.out

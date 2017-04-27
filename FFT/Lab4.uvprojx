@@ -982,11 +982,6 @@
               <FilePath>.\SRC\Audio\Audio.h</FilePath>
             </File>
             <File>
-              <FileName>music.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\SRC\Audio\music.h</FilePath>
-            </File>
-            <File>
               <FileName>DMA.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\SRC\Audio\DMA.c</FilePath>
