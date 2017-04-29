@@ -95,6 +95,9 @@ float32_t coeffVector[]	=	{
 
 float32_t		*pcoeffVector 	= &coeffVector[0] 	;
 
+// Filtering parameters
+// The DMIC is set to sample at 96 kHz, the audio codec samples at 24 kHZ -> decimate by 4
+// We are using block processing to run the samples through the fir filter
 #define DECIMATION_FACTOR  (4u)
 #define NUM_BLOCKS				 (16u)
 #define BLOCK_SIZE (BUFFER_SIZE/NUM_BLOCKS)
@@ -158,6 +161,17 @@ int main(void)
 		
 	#ifdef USE_SCREEN
 		eGFX_InitDriver();
+	
+		// Set an intial screen up. The functions are explained a litle more below
+		eGFX_ImagePlane_Clear(&eGFX_BackBuffer);
+	
+		eGFX_printf(&eGFX_BackBuffer,
+							175,200,   //The x and y coordinate of where to draw the text.
+							&OCR_A_Extended__20px__Bold__SingleBitPerPixelGridFit_1BPP,   //Long font name!
+							"Shifting Frequency");
+							
+		eGFX_Dump(&eGFX_BackBuffer);
+		
 	#endif
 	
 		// float32_t decmiating filter instance
@@ -246,7 +260,7 @@ int main(void)
 	
 		// This section updates the screen (if enabled)
 	#ifdef USE_SCREEN
-		if((buffTransferCnt & 0x3F) == 0)
+		if((buffTransferCnt & 0x7F) == 0)
 		{
 			// Clear the screen buffer
 			eGFX_ImagePlane_Clear(&eGFX_BackBuffer);
